@@ -28,6 +28,7 @@ textarea{
 .time-block{
   text-align: center;
   border-radius: 15px;
+  padding-bottom: 10px;
 }
 
 .row {
@@ -39,7 +40,10 @@ textarea{
 .hour {
   background-color: #ffffff;
   color: #000000;
-  border-top: 1px dashed #000000;
+  height: 79px; /*put time box same height as text entry box*/
+  font-weight: bold;
+  border-top-left-radius: 15px; /*time buttons symmetrical to save buttons*/
+  border-bottom-left-radius: 15px; /*time buttons symmetrical to save buttons*/
 }
 
 .past {
@@ -63,9 +67,16 @@ textarea{
   border-bottom-right-radius: 15px;
   background-color: #06AED5;
   color: white;
+  padding: 20px 40px; /*made save buttons more resemble mock up*/
 }
 
 .saveBtn i:hover {
   font-size: 20px;
   transition: all .3s ease-in-out;
+}
+
+.mb-3,
+.my-3 {
+  margin-bottom: 0rem;
+  height: 79px;
 }
