@@ -1,7 +1,7 @@
 //variables for times
 window.onload = function () {
     colorCode();
-    nineAM(); 
+    nineAM();
     tenAM();
     elevenAM();
     twelvePM();
@@ -16,88 +16,92 @@ window.onload = function () {
 function date_time() {
     now = moment().format('dddd Do MMMM YYYY hh:mm:ss');
     document.getElementById('timer').innerHTML = now;
-    setTimeout(function () {date_time(); }, 1000);
+    setTimeout(function () {
+        date_time();
+    }, 1000);
 }
 date_time();
 
 var now = new Date().getHours();
 
 function colorCode() {
-    //9AM//
+    //9AM
     if (now > 9) {
         $("#comment9am").addClass("past");
-    } else if (now >= 9 && now <10) {
+    } else if (now >= 9 && now < 10) {
         $("#comment9am").addClass("present");
     } else if (now < 9) {
         $("#comment9am").addClass("future");
     }
-    //10AM//
+    //10AM
     if (now > 10) {
         $("#comment10am").addClass("past");
-    } else if (now >= 10 && now <11) {
+    } else if (now >= 10 && now < 11) {
         $("#comment10am").addClass("present");
     } else if (now < 10) {
         $("#comment10am").addClass("future");
     }
-        //11AM//
+    //11AM
     if (now > 11) {
         $("#comment11am").addClass("past");
-    } else if (now >= 11 && now <12) {
+    } else if (now >= 11 && now < 12) {
         $("#comment11am").addClass("present");
     } else if (now < 11) {
         $("#comment11am").addClass("future");
     }
-        //12PM//
+    //12PM
     if (now > 12) {
         $("#comment12pm").addClass("past");
-    } else if (now >= 12 && now <13) {
+    } else if (now >= 12 && now < 13) {
         $("#comment12pm").addClass("present");
     } else if (now < 12) {
         $("#comment12pm").addClass("future");
     }
-        //1PM//    
-        if (now > 13) {
+    //1PM    
+    if (now > 13) {
         $("#comment1pm").addClass("past");
-    } else if (now >= 13 && now <14) {
+    } else if (now >= 13 && now < 14) {
         $("#comment1pm").addClass("present");
     } else if (now < 13) {
         $("#comment1pm").addClass("future");
     }
-        //2PM//
+    //2PM
     if (now > 14) {
         $("#comment2pm").addClass("past");
-    } else if (now >= 14 && now <15) {
+    } else if (now >= 14 && now < 15) {
         $("#comment2pm").addClass("present");
     } else if (now < 14) {
         $("#comment2pm").addClass("future");
     }
-        //3PM//
+    //3PM
     if (now > 15) {
         $("#comment3pm").addClass("past");
-    } else if (now >= 15 && now <16) {
+    } else if (now >= 15 && now < 16) {
         $("#comment3pm").addClass("present");
     } else if (now < 15) {
         $("#comment3pm").addClass("future");
     }
-        //4PM//
+    //4PM
     if (now > 16) {
         $("#comment4pm").addClass("past");
-    } else if (now >= 16 && now <17) {
+    } else if (now >= 16 && now < 17) {
         $("#comment4pm").addClass("present");
     } else if (now < 16) {
         $("#comment4pm").addClass("future");
     }
-    //5PM//
+    //5PM
     if (now > 17) {
-    $("#comment5pm").addClass("past");
-    } else if (now >= 17 && now <18) {
-    $("#comment5pm").addClass("present");
+        $("#comment5pm").addClass("past");
+    } else if (now >= 17 && now < 18) {
+        $("#comment5pm").addClass("present");
     } else if (now < 17) {
-    $("#comment5pm").addClass("future");
+        $("#comment5pm").addClass("future");
     }
 }
 
-//function for loading and saving tasks
+//saving tasks function
+
+//9AM
 function nineAM() {
     var input_textarea = document.querySelector("#comment9am");
     var output_div = document.querySelector("#comment9am");
@@ -115,6 +119,7 @@ function nineAM() {
     }
 }
 
+//10AM
 function tenAM() {
     var input_textarea2 = document.querySelector("#comment10am");
     var output_div2 = document.querySelector("#comment10am");
@@ -132,6 +137,7 @@ function tenAM() {
     }
 }
 
+//11AM
 function elevenAM() {
     var input_textarea3 = document.querySelector("#comment11am");
     var output_div3 = document.querySelector("#comment11am");
@@ -149,6 +155,7 @@ function elevenAM() {
     }
 }
 
+//12PM
 function twelvePM() {
     var input_textarea4 = document.querySelector("#comment12pm");
     var output_div4 = document.querySelector("#comment12pm");
@@ -166,6 +173,8 @@ function twelvePM() {
     }
 }
 
+
+//1PM
 function onePM() {
     var input_textarea5 = document.querySelector("#comment1pm");
     var output_div5 = document.querySelector("#comment1pm");
@@ -183,6 +192,7 @@ function onePM() {
     }
 }
 
+//2PM
 function twoPM() {
     var input_textarea6 = document.querySelector("#comment2pm");
     var output_div6 = document.querySelector("#comment2pm");
@@ -200,6 +210,7 @@ function twoPM() {
     }
 }
 
+//3PM
 function threePM() {
     var input_textarea7 = document.querySelector("#comment3pm");
     var output_div7 = document.querySelector("#comment3pm");
@@ -217,6 +228,7 @@ function threePM() {
     }
 }
 
+//4PM
 function fourPM() {
     var input_textarea8 = document.querySelector("#comment4pm");
     var output_div8 = document.querySelector("#comment4pm");
@@ -234,6 +246,7 @@ function fourPM() {
     }
 }
 
+//5PM
 function fivePM() {
     var input_textarea9 = document.querySelector("#comment5pm");
     var output_div9 = document.querySelector("#comment5pm");
