@@ -41,6 +41,7 @@ textarea {
 .hour {
   background-color: #06AED5;
   color: #000000;
+  border: 1px solid black;
   height: 79px;
   /*put time box same height as text entry box*/
   font-weight: bold;
